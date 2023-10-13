@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>DotSnack</title>
+</head>
+<body>
+    <!-- Barra lateral -->
+    <div class="sidebar">
+        <!-- Logo -->
+        <h1 class="Logo">DotSnack</h1>
+
+        <!-- Lista dos Menus -->
+        <div class="sidebar-menus">
+            <a href="#"><ion-icon name="storefront-outline"></ion-icon>Home</a>
+            <a href="#"><ion-icon name="receipt-outline"></ion-icon>Pedidos</a>
+            <a href="#"><ion-icon name="wallet-outline"></ion-icon>Carteira</a>
+            <a href="#"><ion-icon name="notifications-outline"></ion-icon>Notificações</a>
+            <a href="#"><ion-icon name="chatbubbles-outline"></ion-icon>Bate-Papo</a>
+            <a href="#"><ion-icon name="settings-outline"></ion-icon>Configurações</a>
+        </div>
+        
+        <!-- Logout -->
+        <div class="sidebar-logout">
+            <a href="#"><ion-icon name="log-out-outline"></ion-icon>Sair</a>
+        </div>
+    </div>
+
+    <!-- Barra principal -->
+    <div class="main">
+        <!-- Barra principal de Navegação -->
+        <div class="main-navbar">
+            <!-- Menu compatível com a versão Mobile -->
+            <ion-icon class="menu-toggle" name="menu-outline"></ion-icon>
+            <!-- Barra de Pesquisa-->
+            <div class="search">
+                <input type="text" placeholder="O que você quer comer hoje?">
+                <button class="search-btn">Pesquisar</button>
+            </div>
+            <!-- Ícone de perfil no lado esquerdo da barra de navegação-->
+            <div class="profile"></div>
+            <a class="cart" href="#"><ion-icon name="cart-outline"></ion-icon></a>
+            <a class="user" href="#"><ion-icon name="person-outline"></ion-icon></a>
+        </div>
+        
+        <!-- Destaque principal -->
+        <div class="main-highlight">
+            <!-- Seção de título e seta -->
+            <div class="main-header">
+                <h2 class="main-title">Recomendações</h2>
+                <div class="main-arrow">
+                    <ion-icon class="back" name="chevron-back-circle-outline"></ion-icon>
+                    <ion-icon class="next" name="chevron-forward-circle-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="highlight-wrapper">
+                <div class="highlight-card">
+                    <img class="highlight-img" src="images/chocolate.jpg">
+                    <div class="highlight-desc">
+                        <h4>Chocolate Hersheys</h4>
+                        <p>R$ 12,90</p>
+                    </div>
+                </div>
+            
+                <div class="highlight-card">
+                    <img class="highlight-img" src="images/pepsi.jpg">
+                    <div class="highlight-desc">
+                        <h4>Refrigerante Lata</h4>
+                        <p>R$ 7,90</p>
+                    </div>
+                </div>
+            
+                <div class="highlight-card">
+                    <img class="highlight-img" src="images/suco de garrafa.jpg">
+                    <div class="highlight-desc">
+                        <h4>Coxinha de Frango</h4>
+                        <p>R$ 6,90</p>
+                    </div>
+                </div>
+            
+                <div class="highlight-card">
+                    <img class="highlight-img" src="images/hot-dog.jpg">
+                    <div class="highlight-desc">
+                        <h4>Cachorro-Quente</h4>
+                        <p>R$ 11,90</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Menu Categorias -->
+        <div class="main-menus">
+            <!-- Filtros -->
+            <div class="main-filter">
+                <h2 class="main-title">Categorias</h2>
+                <div class="main-arrow">
+                    <ion-icon class="back-menus" name="chevron-back-circle-outline"></ion-icon>
+                    <ion-icon class="next-menus" name="chevron-forward-circle-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="filter-wrapper">
+                <div class="filter-card">
+                    <div class="filter-icon">
+                        <ion-icon name="restaurant-outline"></ion-icon>
+                    </div>
+                    <p>Todos os Menus</p>
+                </div>
+                <div class="filter-card">
+                    <div class="filter-icon">
+                        <ion-icon name="fast-food-outline"></ion-icon>
+                    </div>
+                    <p>Hamburguers</p>
+                </div>
+                <div class="filter-card">
+                    <div class="filter-icon">
+                        <ion-icon name="pizza-outline"></ion-icon>
+                    </div>
+                    <p>Pizza</p>
+                </div>
+                <div class="filter-card">
+                    <div class="filter-icon">
+                        <ion-icon name="wine-outline"></ion-icon>
+                    </div>
+                    <p>Bebidas Geladas</p>
+                </div>
+                <div class="filter-card">
+                    <div class="filter-icon">
+                        <ion-icon name="ice-cream-outline"></ion-icon>
+                    </div>
+                    <p>Sobremesas</p>
+                </div>
+                <div class="filter-card">
+                    <div class="filter-icon">
+                        <ion-icon name="cafe-outline"></ion-icon>
+                    </div>
+                    <p>Bebidas Quentes</p>
+                </div>
+                <div class="filter-card">
+                    <div class="filter-icon">
+                        <ion-icon name="fast-food-outline"></ion-icon>
+                    </div>
+                    <p>Salgados Diversos</p>
+                </div>
+                <div class="filter-card">
+                    <div class="filter-icon">
+                        <ion-icon name="nutrition-outline"></ion-icon>
+                    </div>
+                    <div>
+                        <p>Comidas Saudáveis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Detalhes do Pedido -->
+        <div class="main-detail">
+            <h2 class="main-title">Escolha o Pedido</h2>
+            <div class="detail-wrapper">
+                <div class="detail-card">
+                    <img class="detail-img" src="images/coxinha.jpg">
+                    <div class="detail-desc">
+                        <div class="detail-name">
+                            <h4>Coxinha</h4>
+                            <p class="detail-sub">Coxinha de Frango com Catupiry</p>
+                            <p class="price">R$ 7,99</p>
+                        </div>
+                        <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>   
+                    </div>
+                </div>
+            <div class="detail-card">
+                <img class="detail-img" src="images/Salada.jpg">
+                <div class="detail-desc">
+                    <div class="detail-name">
+                        <h4>Bowl de Salada Cesar</h4>
+                        <p class="detail-sub"> Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        <p class="price">R$45,00</p>
+                    </div>
+                    <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="detail-card">
+                <img class="detail-img" src="images/lanche.png">
+                <div class="detail-desc">
+                    <div class="detail-name">
+                        <h4>Hambúrguer Clássico</h4>
+                        <p class="detail-sub">Carne, queijo, alface e tomate</p>
+                        <p class="price">R$ 24,99</p>
+                    </div>
+                    <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>   
+                </div>
+            </div>
+            <div class="detail-card">
+                <img class="detail-img" src="images/Pizza.jpg">
+                <div class="detail-desc">
+                    <div class="detail-name">
+                        <h4>Pizza Margherita</h4>
+                        <p class="detail-sub">Molho de tomate, muçarela e manjericão</p>
+                        <p class="price">R$ 15,99</p>
+                    </div>
+                    <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>   
+                </div>
+            </div>
+            <div class="detail-card">
+                <img class="detail-img" src="images/Sobremesas.jpg">
+                <div class="detail-desc">
+                    <div class="detail-name">
+                        <h4>Sorvete de Chocolate</h4>
+                        <p class="detail-sub">Chocolate belga com calda de caramelo</p>
+                        <p class="price">R$ 8,99</p>
+                    </div>
+                    <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="detail-card">
+                <img class="detail-img" src="images/Coffe.jpg">
+                <div class="detail-desc">
+                    <div class="detail-name">
+                        <h4>Café Espresso</h4>
+                        <p class="detail-sub">Puro e forte</p>
+                        <p class="price">R$ 5,99</p>
+                    </div>
+                    <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Importação dos ícones do Ionic -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Codigo JS-->
+    <script src="https:/code.jquery.com/jequery-2.2.4.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
